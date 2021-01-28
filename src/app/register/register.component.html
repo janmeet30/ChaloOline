@@ -1,0 +1,28 @@
+<form class ="form-horizontal">
+        <div class="main-w3layouts wrapper">
+            <h1> Registeration Form</h1>
+            <div class="main-agileinfo">
+                <div class="agileits-top">
+                    <form action="#" method="post">
+                        <label for="email">Email address:</label>
+                         <input ngModel name="email" #email="ngModel"  type="text" placeholder="Email Id" required email> 
+                         <label for="email">Username:</label>
+                         <input ngModel name="username" #username="ngModel"  type="text" placeholder="Username" required username> 
+                         <label for="password">Password:</label>
+                         <input ngModel name="password" #password="ngModel"  type="password" placeholder="Password" required password> 
+                         <label for="confirmpassword"> Confirm Password:</label>
+                         <input ngModel name="confirmpassword" #confirmpassword="ngModel"  type="password" placeholder="Confirm Password" required Confirmpassword> 
+                        <div class="wthree-text">
+                            <label class="anim">
+                                <input type="checkbox" class="checkbox" required="">
+                                <span>I Agree To The Terms & Conditions</span>
+                            </label>
+                            <div class="clear"> </div>
+                        </div>
+                        <button (click) ="registerUser()" type="button" class="btn btn-default">Sign Up</button>
+                    </form>
+                    <p>Already have an Account? <a href="#" routerLink="/login"> Login Now!</a></p>
+                </div>
+            </div>
+        </div>
+ </form>
