@@ -14,6 +14,7 @@ export class AuthService {
     private  _loginUrl ="http://localhost:4200/api/login";
     private  _registerUrl ="http://localhost:4200/api/register";
     private  _activeaccountUrl =" http://localhost:4200/api/activeaccount";
+  
     
 
 
@@ -33,4 +34,6 @@ export class AuthService {
   submitUser(user: any) {
     return this.http.post<any>(this._activeaccountUrl,user)
   }
+
+ 
 }

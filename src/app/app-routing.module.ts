@@ -1,3 +1,9 @@
+import { LeadershipclubComponent } from './leadershipclub/leadershipclub.component';
+import { MyteamComponent } from './myteam/myteam.component';
+import { MydirectComponent } from './mydirect/mydirect.component';
+import { RewardsclubComponent } from './rewardsclub/rewardsclub.component';
+import { BonousincomeComponent } from './bonousincome/bonousincome.component';
+import { ReferalincomeComponent } from './referalincome/referalincome.component';
 import { TeamComponent } from './team/team.component';
 import { SendfreelinkComponent } from './sendfreelink/sendfreelink.component';
 import { IncomeComponent } from './income/income.component';
@@ -32,13 +38,28 @@ const routes: Routes = [
 },
 
 {
+  path:"sendfreelink",
+  component: SendfreelinkComponent,
+},
+
+{
   path:"active-account",
   component: ActiveAccountComponent,
 },
 
 {
-  path:"contact-us",
-  component: ContactUsComponent,
+  path: "team",
+  component: TeamComponent,
+},
+
+{
+  path: "mydirect",
+  component: MydirectComponent,
+},
+
+{
+  path: "myteam",
+  component: MyteamComponent,
 },
 
 {
@@ -47,19 +68,38 @@ const routes: Routes = [
 },
 
 {
+  path: "referalincome",
+  component: ReferalincomeComponent,
+},
+
+{
+  path: "bonousincome",
+  component: BonousincomeComponent,
+},
+
+{
+  path: "rewardsclub",
+  component: RewardsclubComponent,
+},
+
+{
+  path: "leadershipclub",
+  component: LeadershipclubComponent,
+},
+
+
+{
   path:"payment-history",
   component: PaymentHistoryComponent,
 },
 
-{
-  path:"sendfreelink",
-  component: SendfreelinkComponent,
-},
 
 {
-  path: "team",
-  component: TeamComponent,
+  path:"contact-us",
+  component: ContactUsComponent,
 },
+
+
 
 ];
 

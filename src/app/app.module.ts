@@ -16,6 +16,12 @@ import { SendfreelinkComponent } from './sendfreelink/sendfreelink.component';
 import { TeamComponent } from './team/team.component';
 import { IncomeComponent } from './income/income.component';
 import { PaymentHistoryComponent } from './payment-history/payment-history.component';
+import { ReferalincomeComponent } from './referalincome/referalincome.component';
+import { BonousincomeComponent } from './bonousincome/bonousincome.component';
+import { RewardsclubComponent } from './rewardsclub/rewardsclub.component';
+import { LeadershipclubComponent } from './leadershipclub/leadershipclub.component';
+import { MydirectComponent } from './mydirect/mydirect.component';
+import { MyteamComponent } from './myteam/myteam.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,13 @@ import { PaymentHistoryComponent } from './payment-history/payment-history.compo
     SendfreelinkComponent,
     TeamComponent,
     IncomeComponent,
-    PaymentHistoryComponent
+    PaymentHistoryComponent,
+    ReferalincomeComponent,
+    BonousincomeComponent,
+    RewardsclubComponent,
+    LeadershipclubComponent,
+    MydirectComponent,
+    MyteamComponent
   ],
   imports: [
     FormsModule,

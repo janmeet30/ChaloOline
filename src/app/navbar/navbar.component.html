@@ -1,5 +1,5 @@
 
-<!--   Collapsing Navbar for everypage-->
+<!--   Collapsing Navbar for everypage
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   Site Logo Here 
@@ -32,7 +32,7 @@
          </li>
          <li class ="nav-item">
            <a href="#" routerLinkActive="active" routerLink="/income">
-             <span class="glyphicon glyphicon-user"></span> Income </a>
+             <span class="glyphicon glyphicon-user"></span> Income</a>        
          </li>
          <li class ="nav-item">
           <a href="#" routerLinkActive="active" routerLink="/payment-history">
@@ -43,11 +43,46 @@
             <span class="glyphicon glyphicon-user"></span> Contact Us</a>
         </li>
 
-        <!--  Logout popup -->
+      
+
+        Logout popup
         <li class ="nav-item">
           <a href="#" routerLinkActive="active" routerLink="/contact-us">
             <span class="glyphicon glyphicon-user"></span> Logout </a>
         </li>
      </ul>
  </div>
-</nav>
+</nav>-->
+
+
+
+
+
+<div class="navbar">
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink = "/sendfreelink">Send Link Free</a>
+  <a routerLink ="/active-account">Active Now</a>
+  <div class="subnav">
+    <button class="subnavbtn">Team<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a routerLink="/mydirect">My Direct</a>
+      <a routerLink="myteam"> My Team</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Income<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a routerLink="/referalincome"> Referal Income </a>
+      <a routerLink="/bonousincome">Bonous Income </a>
+      <a routerLink="/rewardsclub">Rewards Club </a>
+      <a routerLink="/leadershipclub">LeadershipClub</a>
+    </div>
+  </div>
+  <a routerLink="/payment-history"> Payment History</a>
+  <a routerLink="/contact-us">Contact Us</a>
+  <div class="subnav">
+    <button class="subnavbtn">Logout<i class="fa fa-caret-down"></i></button>
+  </div>
+ <!--<button (click)=”logout()”>Logout</button>-->
+ 
+</div>
