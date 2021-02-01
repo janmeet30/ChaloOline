@@ -1,4 +1,15 @@
-<form class ="form-horizontal" #f ="ngForm">
+<div class="row">
+
+  <!--image -->
+  <div class="column">
+      <img src="../../assets/images/login.jpg" style="width:700px;height:500px;">
+      
+  
+  <!-- form of registration-->
+   <div class="column" style="width:500px;float:right;text-align:left; height:100px"> 
+    
+    <h1> Login Forms </h1>
+<form #f ="ngForm">
     <div class="form-group">
       <label for="username">Username:</label>
       <input ngModel name="username" #username="ngModel"  type="text" placeholder="Enter your Username" required  username> 
@@ -8,8 +19,17 @@
       <input ngModel name="password" #password="ngModel"  type="password" placeholder="Password" required> 
 
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
+    <div class="wthree-text">
+           <input type="checkbox"class="checkbox" required="">
+           <div class="row">
+           <span > Remember me </span>
+           </div>
+       <div class="clear"> </div>
+  </div>
+
     <button (click) ="loginUser()" type="button" class="btn btn-default">Signin</button>
   </form>
+   </div>
+   </div>
+   </div>
+   
