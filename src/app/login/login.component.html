@@ -1,15 +1,40 @@
-<form class ="form-horizontal" #f ="ngForm">
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input ngModel name="username" #username="ngModel"  type="text" placeholder="Enter your Username" required  username> 
-    </div>
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input ngModel name="password" #password="ngModel"  type="password" placeholder="Password" required> 
+<div id="parent">
+  <div id="sidediv">
+    <!-- <div id="logodiv">
+      <img class="logo" src="../../assets/images/logo.png" alt="logo">
+    </div> -->
+    <img class="main" src="../../assets/images/loginillust1.png" alt="main">
+  </div>
+  <div id="logindiv">
+
+
+    <div class="col-md-9 h-75" id="loginparent">
+
+      <div class="" id="loginchild">
+        <h1 class="text-center">Login</h1>
+
+        <form class="form-horizontal" #f="ngForm">
+          <div class="form-group p-4">
+            <input ngModel name="username" class="w-100" #username="ngModel" type="text"
+              placeholder="Enter your Username" required username>
+          </div>
+          <div class="form-group p-4">
+            <input ngModel name="password" class="w-100" #password="ngModel" type="password" placeholder="Password"
+              required>
+
+          </div>
+          <div class="checkbox w-100 m-lg-2">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+
+
+          <button (click)="loginUser()" type="button" class="btn btn-default w-50 text-center mt-5">Continue ></button>
+
+        </form>
+
+
+      </div>
 
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button (click) ="loginUser()" type="button" class="btn btn-default">Signin</button>
-  </form>
+  </div>
+</div>
